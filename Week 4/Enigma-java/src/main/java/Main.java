@@ -8,10 +8,13 @@ public class Main {
         // Obtain a reference to the console
         Console con = System.console();
 
-        System.out.println("Hello world");
+        System.out.println("HELLO WORLD");
 
         // List of rotors to map characters. Spaces in the rotor strings should be ignored.
         List<String> rotors = new ArrayList<String>();
+        
+        
+        rotors.add("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
         rotors.add("BDFHJLCPRTXVZNYEIWGAKMUSQO");
         rotors.add("AJDKSIRUXBLHWTMCQGZNPYFVOE");
         rotors.add("EKMFLGDQVZNTOWYHXUSPAIBRCJ");
