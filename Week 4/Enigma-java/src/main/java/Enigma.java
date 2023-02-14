@@ -1,4 +1,4 @@
-/// Filename: Enigma.java
+ /// Filename: Enigma.java
 // / Author: Dr. Shane Wilson
 /// Description: Add a useful description of this file
 
@@ -21,9 +21,13 @@ public final class Enigma {
            for(int j=0; j<message.length(); j++)
            {
               String rotor = rotors.get(i);
-              //If the character at j is not a space then replace with adjacent character from rotor 
-              if(message.charAt(j)!=' ')
-              message = message.replace(message.charAt(j), rotor.charAt(ALPHABET.indexOf(message.charAt(j) ) ) );
+              //If the character at j is not a space then replace with adjacent character from rotor
+              if(message.charAt(j)!=' ') {
+                  char letter = message.charAt(j);
+                  char letterReplace = rotor.charAt(ALPHABET.indexOf(letter));
+                  //message = message.replace(message.charAt(j), rotors.get(i).charAt(ALPHABET.indexOf(message.charAt(j))));
+                  message = message.replace(letter, letterReplace);
+              }
            }
         }
         // 3. Return the encrypted string

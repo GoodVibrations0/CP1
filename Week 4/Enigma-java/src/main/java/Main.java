@@ -14,7 +14,7 @@ public class Main {
         List<String> rotors = new ArrayList<String>();
         
         
-        rotors.add("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+        //rotors.add("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
         rotors.add("BDFHJLCPRTXVZNYEIWGAKMUSQO");
         rotors.add("AJDKSIRUXBLHWTMCQGZNPYFVOE");
         rotors.add("EKMFLGDQVZNTOWYHXUSPAIBRCJ");
